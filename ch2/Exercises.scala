@@ -42,13 +42,4 @@ object Exercises {
     def compose[A, B, C](f: A => B, g: B => C): A => C = {
 	a => g(f(a))
     }
-
-    def main(args: Array[String]): Unit = {
-	println(fib(Integer.parseInt(args(0))))
-	def lowerThan(a: Int, b: Int): Boolean = {
-	    return a <= b;
-	}
-	println(isSorted(Array(2, 1), lowerThan));
-
-    }
 }
